@@ -1,4 +1,7 @@
 @media (max-width: 1200px){
+	.header__inner{
+		padding-top: 0;
+	}
 	.top .container{
 		position: relative;
 	}
@@ -15,8 +18,207 @@
 	.list__inner .tabs{
 		width: calc(100% - 500px);
 	}
+	.advantages__inner{
+		flex-wrap: wrap;
+		justify-content: space-around;
+		padding: 30px;
+	}
+	.popularity{
+		padding-top: 90px;
+	}
+	.popularity .container{
+		padding: 0;
+	}
+	.popularity__wrapper{
+		display: flex;
+		flex-direction: column;
+	}
+	.popularity__left{
+		position: relative;
+		margin-left: 0;
+		background-position: center;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+	}
+	.popularity__inner{
+		order: -1;
+		justify-content: center;
+		min-height: auto;
+		margin-bottom: 25px;
+	}
+	.popularity__right{
+		padding: 0 15%;
+		max-width: 100%;
+	}
+	.popularity__right-title{
+		font-size: 30px;
+		line-height: 40px;
+		text-align: center;
+	}
+	.popularity__right-subtitle{
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.popularity__right-list li{
+		margin-bottom: 25px;
+	}
+	.popularity__box{
+		/* right: 50%;
+		transform: translateX(50%); */
+		max-width: 570px;
+		position: static;
+	}
+	.popularity__box-link{
+		max-width: 530px;
+		position: relative;
+		margin: 0 auto;
+		width: 100%;
+	}
+	.popularity__box-inner{
+		/* 2 strings title */
+	}
+	.default-btn{
+		position: static;
+	}
+	.default-btn::after{
+		display: none;
+	}
 }
- @media (max-width: 960px){
+@media (max-width: 1090px){
+	.advantages__item{
+		max-width: calc(50% - 25px);
+	}
+	.advantages__item:nth-child(odd){
+		margin-right: 50px;
+	}
+	.list__background{
+		min-height: 645px;
+	}
+	.tabs__box{
+		flex-flow: column;
+		align-items: flex-start;
+		padding-right: 20px;
+	}
+	.tabs__box .tab{
+		width: 100%;
+		max-width: 100%;
+		font-weight: 600;
+		text-transform: uppercase;
+		font-size: 14px;
+		
+	}
+	.tabs__box .tab:nth-child(3),
+	.tabs__box .tab:nth-child(4){
+		border-left: none;
+		padding-left: 38px;
+		width: 100%;
+		max-width: 100%;
+	}
+	.tabs__box .tab:nth-child(3) span,
+	.tabs__box .tab:nth-child(4) span{
+		margin-left: 0;
+	 }
+	 .advantages{
+		margin-bottom: 0;
+	}
+}
+@media (max-width: 1000px){
+	.list__background{
+		top: 120px;
+	}
+	.list__inner{
+		display: block;
+	}
+	.list__title{
+		margin: 0 auto 40px;
+		font-size: 30px;
+		line-height: 40px;
+		text-align: center;
+
+	}
+	.list__wrapper .container{
+		padding: 0;
+	}
+	.list__inner .tabs{
+		width: 100%;
+		padding: 0 60px;
+	}
+	.tab{
+		margin-right: 0;
+	}
+	.tabs__box{
+		flex-flow: column wrap;
+		padding-right: 0;
+		max-width: 100%;
+	}
+
+	.tabs__box .tab:nth-child(3),
+	.tabs__box .tab:nth-child(4){
+		border-left: none;
+		padding-left: 38px;
+		width: 50%;
+		max-width: 50%;
+	}
+	.tabs .active::before{
+		display: none;
+	}
+	.tabs__box .tab{
+		width: 50%;
+		max-width: 100%;
+		font-weight: 400;
+		text-transform: none;
+		font-size: 16px;
+		padding-right: 30px;
+		
+	}
+	.tabs__box .tab:nth-child(3),
+	.tabs__box .tab:nth-child(4){
+		border-left: 1px solid #e6efde;
+		padding-left: 60px;
+		
+		/* width: 100%;
+		max-width: 100%; */
+	}
+	.tabs__box .tab:nth-child(3) span,
+	.tabs__box .tab:nth-child(4) span{
+		padding-left: 20px;
+}
+	.tabs__content{
+		margin: 0 auto;
+		width: 100%;
+		background-size: contain;
+		background-color: #a4c58c;
+	}
+	.tabs__content-reviews{
+		left: 50%;
+		transform: translateX(-50%);
+		height: auto;
+		max-width: 60%;
+		width: 100%;
+		margin-bottom: -20px;
+		
+	}
+	.tabs__content-reviews .tabs__content-inner{
+		height: auto;
+		width: 100%;
+		max-width: 100%;
+	}
+	.tabs__content-reviews .tabs__content-link{
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.list__link{
+		margin-top: 40px;
+		justify-content: center;
+	}
+	.list__link a{
+		min-width: 60%;
+		text-align: center;
+	}
+}
+@media (max-width: 960px){
 	.top__inner-suptitle{
 		margin-top: 30px;
 	}
@@ -31,16 +233,264 @@
 }
 
 @media (max-width: 735px){
+	.header__text{
+		display: none;
+	}
+	.top{
+		margin-bottom: 25px;
+	}
+	.top__wrapper{
+		margin-top: -530px;
+		position: relative;
+	}
+	.top__images{
+		min-height: 530px;
+	}
 	.top__inner{
 		flex-wrap: wrap;
+		min-height: 530px;
+	}
+	.top__inner-img img{
+		height: 285px;
+		margin-bottom: 95px;
+		width: auto;
 	}
 	.top__inner-form{
 		order: -1;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.top__inner-suptitle{
+		margin-top: 35px;
+		margin-bottom: 15px;
+		font-size: 12px;
+		font-weight: 600;
+		letter-spacing: 0.6px;
+	}
+	.top__inner-title{
+		font-size: 30px;
+		line-height: 36px;
 	}
 	.top__inner-text{
 		display: none;
 	}
 	.top-form{
 		display: none;
+	}
+	.top__button-mobile{
+		display: block;
+		font-size: 14px;
+		line-height: 80px;
+		padding: 0;
+		background-color: #7eb152;
+		text-align: center;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+
+	.tabs__content-reviews{
+		max-width: 80%;	
+	}
+	.list__link a{
+		min-width: 80%;
+	}
+}
+@media (max-width: 650px){
+	.advantages__item{
+		padding-top: 0;
+	}
+	.advantages__item::before{
+		display: none;
+	}
+	.advantages__item-inner{
+		padding-left: 0;
+	}
+}
+@media (max-width: 600px){
+	.tabs__box{
+		flex-flow: column;
+		align-items: flex-start;
+		padding-right: 20px;
+		height: auto;
+	}
+	.tabs__box .tab{
+		width: 100%;
+		max-width: 100%;
+		font-weight: 600;
+		text-transform: uppercase;
+		font-size: 14px;
+		
+	}
+	.tabs__box .tab:nth-child(3),
+	.tabs__box .tab:nth-child(4){
+		border-left: none;
+		padding-left: 38px;
+		width: 100%;
+		max-width: 100%;
+		
+	}
+	.tabs__box .tab:nth-child(3) span,
+	.tabs__box .tab:nth-child(4) span{
+		margin-left: 0;
+		padding-left: 0;
+	 }
+	 .tabs__box .tab span {
+    font-size: 14px;
+}
+	.list__background{
+	height: 715px;
+}
+	.popularity__box-text{
+		font-size: 14px;
+	}
+}
+@media (max-width: 550px){
+	.default-btn{
+		font-size: 12px;
+	}
+}
+@media (max-width: 500px){
+	.header__inner{
+		height: 65px;
+		padding: 0;
+	}
+	.header__logo img{
+		width: 110px;
+		height: 16px;
+	}
+	.header__phone a{
+		font-size: 14px;
+	}
+	.header__phone a::before,
+	.header__phone-text{
+		display: none;
+	}
+	.advantages__item{
+		max-width: 80%;
+	}
+	.advantages__item:nth-child(odd){
+		margin-right: 0;
+	}
+	.list__inner .tabs{
+		padding: 0 10px;
+	}
+	.list__background{
+		top: 160px;
+	}
+	.tab{
+		line-height: 20px;
+		letter-spacing: 0.6px;
+		padding: 25px 30px;
+	}
+	.tab:last-child{
+		border-bottom: none;
+	}
+	.tabs__content .tab{
+		display: none;
+	}
+	
+	.tabs__box{
+		flex-flow: column;
+		align-items: flex-start;
+		padding-right: 20px;
+		height: auto;
+	}
+	.tabs__box .tab{
+		width: 100%;
+		max-width: 100%;
+		font-weight: 600;
+		text-transform: uppercase;
+		font-size: 14px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		
+	}
+	.tabs__box .tab:nth-child(3),
+	.tabs__box .tab:nth-child(4){
+		border-left: none;
+		padding-left: 38px;
+		width: 100%;
+		max-width: 100%;
+		
+	}
+	.tabs__box .tab:nth-child(3) span,
+	.tabs__box .tab:nth-child(4) span{
+		margin-left: 0;
+		padding-left: 0;
+	 }
+	 .tabs__box .tab span {
+    font-size: 14px;
+}
+	.tabs__content-reviews{
+		margin-bottom: 0;
+		padding: 10px;
+	}
+	.list__link{
+		margin-top: 0;
+	}
+	.list__link a{
+		min-width: 100%;
+		text-align: center;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.list__link a::after {
+		display: none;
+	}
+	.tabs{
+		background-color: #f6f9f3;
+	}
+	.tabs__content{
+		background: none;
+		min-width: auto;
+		height: auto;
+	}
+	.tabs__content .tab-item{
+		display: none;
+	}
+	.tabs__content-reviews{
+		position: static;
+		transform: none;
+		max-width: 100%;
+		font-size: 14px;
+		padding-bottom: 15px;
+	}
+	.popularity__box-link{
+		position: relative;
+		bottom: 0;
+		right: 0;
+	}
+	.popularity__box-link::after{
+		content: "Получить к себе в аптечку";
+	}
+}
+@media (max-width: 450px){
+	.top__wrapper{
+		margin-top: -435px;
+	}
+	.top__images{
+		min-height: 435px;
+	}
+	.top__inner{
+		min-height: 435px;
+	}
+	.top__inner-img img{
+		height: 190px;	
+	}
+	.top__button-mobile{
+		font-size: 12px;
+		line-height: 60px;
+	}
+	.tab,
+	.tabs__box .tab{
+		font-size: 12px;
+	}
+}
+@media (max-width: 350px){
+	.advantages__item{
+		max-width: 100%;
 	}
 }

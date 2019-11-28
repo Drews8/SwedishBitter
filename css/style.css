@@ -207,6 +207,9 @@ a{
 	transform: translateY(-50%);
 	right: 60px;
 }
+.top__button-mobile{
+	display: none;
+}
 .advantages{
 	margin-bottom: 200px;
 }
@@ -431,12 +434,12 @@ a{
 	flex-flow: column wrap;
 	align-items: center;
 	height: 170px;
-	width: 650px;
+	max-width: 650px;
 
 }
 .tabs__box .tab{
 	max-width: 350px;
-	width: 100%;
+	width: 50%;
 	margin-right: 0;
 	height: 80px;
 	padding-top: 20px;
@@ -462,6 +465,7 @@ a{
 .tabs__box .tab:nth-child(4) span{
 	margin-left: 40px;
 }
+
 .list__link{
 	margin-top: 35px;
 	display: flex;
@@ -496,7 +500,7 @@ a{
 	padding-top: 200px;
 	position: relative;
 }
-.popularity__wrapper{
+.popularity__left{
 	background-image: url(../images/popularity.jpg);
 	position: absolute;
 	max-width: 875px;
@@ -515,12 +519,13 @@ a{
 	justify-content: flex-end;
 }
 .popularity__box{
+	position: absolute;
+	max-width: 600px;
 	padding: 20px;
 	padding-bottom: 0;
-	margin-right: 85px;
 	background-color: #fff;
-	align-self: flex-end;
-	z-index: 1;
+	bottom: 0;
+	right: 0;
 	
 }
 .popularity__box-text{
@@ -528,18 +533,17 @@ a{
 	width: 100%; */
 	border: 1px solid #c5adc5;
 	background-color: inherit;
-	padding: 30px;
-	padding-bottom: 100px;
+	padding: 35px;
 	line-height: 24px;
 	color: #303030;
 	position: relative;
 }
 .popularity__box-link{
 	position: absolute;
-	bottom: 0;
-	left: 0;
+	bottom: -70px;
+	right: 20px;
 	background-color: #7eb252;
-	width: 100%;
+	width: calc(100% - 40px);
 	font-weight: 600;
 	line-height: 22px;
 	letter-spacing: 0.7px;
